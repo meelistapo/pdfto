@@ -45,3 +45,6 @@ dependencies {
     compile group: 'com.itextpdf', name: 'pdfa', version: '7.0.0'
     compile group: 'com.itextpdf', name: 'pdftest', version: '7.0.0'
 }
+task stage {
+	dependsOn clean, build
+}
