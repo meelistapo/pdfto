@@ -1,0 +1,47 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+jar {
+	baseName = 'ePub'
+	version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+configurations.all {
+    exclude module: 'slf4j-log4j12'
+    exclude module: 'log4j'
+}
+
+dependencies {
+    // springBoot
+	compile('org.springframework.boot:spring-boot-starter')
+	// compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-web-services')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+    // iText
+    compile group: 'com.itextpdf', name: 'kernel', version: '7.0.0'
+    compile group: 'com.itextpdf', name: 'io', version: '7.0.0'
+    compile group: 'com.itextpdf', name: 'layout', version: '7.0.0'
+    compile group: 'com.itextpdf', name: 'forms', version: '7.0.0'
+    compile group: 'com.itextpdf', name: 'pdfa', version: '7.0.0'
+    compile group: 'com.itextpdf', name: 'pdftest', version: '7.0.0'
+}
