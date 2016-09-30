@@ -46,9 +46,6 @@ dependencies {
     compile group: 'com.itextpdf', name: 'pdftest', version: '7.0.0'
 }
 
-task copyToLib(type: Copy) {
-	into "$buildDir/lib"
-	from(configurations.compile)
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.6'
 }
-
-stage.dependsOn(copyToLib)
