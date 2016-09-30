@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90d841d4-6325-4f40-9524-f75e3aa8c86b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="90d841d4-6325-4f40-9524-f75e3aa8c86b" name="Default" comment="" />
     <ignored path="pdfto.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -1154,7 +1152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1475264120090</updated>
-      <workItem from="1475264124235" duration="4894000" />
+      <workItem from="1475264124235" duration="4910000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1475264328063</created>
@@ -1219,11 +1217,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475270394615</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="build.gradle update">
+      <created>1475270623547</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1475270623547</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4894000" />
+    <option name="totallyTimeSpent" value="4910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
